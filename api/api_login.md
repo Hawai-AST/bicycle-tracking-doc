@@ -41,17 +41,19 @@ _Benötigt Client-ID Header._
 ```json
 {
     "email": "testing@example.com",
-    "custiomerid": "00157751",
+    "customerid": "00157751",
     "firstname": "Hans",
     "name": "Wurst",
     "password": "thisismypawword",
-    "brithday": "01.01.1970",
+    "birthday": "01.01.1970",
     "gender": "male",
     "address": {
-        "street": "Home 1",
-        "zip": 42042,
-        "city": "Bielefeld",
+        "street": "Leetstreet",
+        "houseNumber": "13",
+        "city": "Hamburg",
         "state": "Germany"
+        "postcode": 42042,
+        "country": "Germany"
     }
 }
 ```
