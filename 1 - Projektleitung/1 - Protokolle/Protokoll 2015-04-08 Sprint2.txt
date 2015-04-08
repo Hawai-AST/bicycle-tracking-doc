@@ -1,0 +1,24 @@
+| ================= Sprint 2 =================
+
+* * * * * * ORGA * * * * * *
+  tags erstellen (frontend, backend, ...)
+  nächsten sprint anlegen
+  
+
+* * * * * * BACKEND * * * * * *
+  Architektur Quasar-gemäß anpassen
+  Fahrrad Controller spezifizieren u. implementieren
+  Vom User (vorgegebene?/) erstellte Strecken speichern können
+  ??Security: Id's / Berechtigungen vergeben um Zugriff auf bestimmte Funktionalitäten zu kontrollieren
+  Zugriff auf Backend von GUI per Token only.
+
+* * * * * * FRONTEND * * * * * *
+  Session Management
+  ? Einbindung von Leaflet Maps-Prototyp
+  (Tim) Travis CI - fix frontend tests
+  Fahrrad-Management (Räder registrieren, usw...)
+
+* * * * * * TECH * * * * * *
+  Keine SSL verwenden
+  OAuth integrieren
+  CRM - welche Daten werden wie geliefert
