@@ -51,7 +51,7 @@ _Benötigt Client-ID Header._
         "street": "Leetstreet",
         "houseNumber": "13",
         "city": "Hamburg",
-        "state": "Germany",
+        "state": "Hamburg",
         "postcode": 42042,
         "country": "Germany"
     }
