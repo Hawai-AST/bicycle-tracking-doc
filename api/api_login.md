@@ -60,13 +60,13 @@ _Benötigt Client-ID Header._
 | Parameter  | Beschreibung |
 |------------|--------------|
 | email      | Email des Kunden, die Später verwendet werden soll |
-| customerid | Die vom CRM dem Kunden zugeteil wurde |
+| customerid | Kundennummer, dem Kunden vom CRM zugeteilt wurde |
 | firstname  | Vorname des Kunden |
 | name       | Nachname des Kunden |
-| password   | Das zu verwendende Password |
+| password   | Das zu verwendende Passwort |
 | birthday   | Geburtstag des Kunden, Format: dd.mm.yyyy |
 | gender     | Geschlecht des Kunden |
-| address    | Adress des Kunden |
+| address    | Adresse des Kunden |
 
 ### Response
 Bei Erfolg:
