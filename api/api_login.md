@@ -24,7 +24,7 @@ Bei Erfolg:
 ```json
 {
     "email": "testing@example.com",
-    "token": "vabkj4fvba4jkvrtaj4gr"
+    "token": "bf3b8eca-f5cd-46ba-b424-f6f91d142d70"
 }
 ```
 Der Token wird für alle weiteren Anfragen benötigt.
@@ -73,7 +73,7 @@ Bei Erfolg:
 ```json
 {
     "email": "testing@example.com",
-    "token": "vabkj4fvba4jkvrtaj4gr"
+    "token": "bf3b8eca-f5cd-46ba-b424-f6f91d142d70"
 }
 ```
 Der Token wird für alle weiteren Anfragen benötigt. Zu beachten: Die Registrierung führt sogleich einen Login aus, deswegen die gleiche Rückgabe.
