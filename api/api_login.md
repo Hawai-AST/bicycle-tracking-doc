@@ -44,7 +44,7 @@ _Benötigt Client-ID Header._
     "customerid": "00157751",
     "firstname": "Hans",
     "name": "Wurst",
-    "password": "thisismypawword",
+    "password": "thisismypassword",
     "birthday": "01.01.1970",
     "gender": "male",
     "address": {
