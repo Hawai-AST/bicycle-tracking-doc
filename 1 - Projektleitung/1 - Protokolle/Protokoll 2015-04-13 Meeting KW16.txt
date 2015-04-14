@@ -1,0 +1,6 @@
+| ================= HAWAI MEETING KW 16 =================
+
+* * * * * * ANLIEGEN * * * * * *
+  Achtung bei Auswahl des Projekts auf YouTrack. Einige Issues wurden im normalen Projekt (AST) eingefügt, waren aber Fälle für SPEC.
+  Mehr Qualitätsbeauftragte und agileres Vorgehen, wenn zu viele Sachen zu reviewen sind (?).
+* -----------------------------------------------------------------------------
