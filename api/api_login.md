@@ -52,7 +52,7 @@ _Benötigt Client-ID Header._
         "houseNumber": "13",
         "city": "Hamburg",
         "state": "Hamburg",
-        "postcode": 42042,
+        "postcode": "42042",
         "country": "Germany"
     }
 }
