@@ -1,0 +1,44 @@
+#+OPTIONS: ^:nil
+
+* Test Konventionen
+
+** Konvention
+Tests werden nach folgendem Schema benannt:
+#+BEGIN_EXAMPLE
+Arbeitseinheit_Eingabe_ErwartetesErgebnis
+#+END_EXAMPLE
+(Englisch: "UnitOfWork_StateUnderTest_ExpectedBehavior")
+
+  - Eine Arbeitseinheit ist die Klasse, Methode bzw. Funktionalität die getestet wird. \\
+    Ist am getesteten Ablauf nicht nur eine Methode beteiligt wird als \\
+    Arbeitseinheit die erste public Methode gewählt, die aufgerufen wird. ("Einstiegsmethode")
+  - Die Eingabe sind die Eingabeparameter für den Test.
+  - Das Erwartete Ergebnis ist das, was durch die Assertion(s) getestet wird.
+
+** Beispiele
+   
+#+BEGIN_SRC java
+  public void Sum_NegativeNumberAs1stParam_ExceptionThrown()
+
+  public void Sum_NegativeNumberAs2ndParam_ExceptionThrown ()
+
+  public void Sum_simpleValues_Calculated ()
+
+  public void Parse_OnEmptyString_ExceptionThrown()
+
+  public void Parse_SingleToken_ReturnsEqualToeknValue ()
+#+END_SRC
+
+#+BEGIN_SRC java
+  IsLoginOK_UserDoesNotExist_ReturnsFalse
+
+  AddUser_ValidUserDetails_UserCanBeLoggedIn
+
+  IsLoginOK_LoginFails_CallsLogger
+#+END_SRC
+	 
+** Referenzen und weiterführende Texte
+   - http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html
+   - http://osherove.com/blog/2012/5/15/test-naming-conventions-with-unit-of-work.html
+   - http://osherove.com/blog/2012/5/15/what-does-the-unit-in-unit-test-mean.html
+   - http://artofunittesting.com/definition-of-a-unit-test/

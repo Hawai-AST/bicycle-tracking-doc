@@ -1,0 +1,82 @@
+% Created 2015-04-17 Fr 01:11
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\date{\today}
+\title{test\_konventionen}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.4.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Test Konventionen}
+\label{sec-1}
+
+\subsection{Konvention}
+\label{sec-1-1}
+Tests werden nach folgendem Schema benannt:
+\begin{verbatim}
+Arbeitseinheit_Eingabe_ErwartetesErgebnis
+\end{verbatim}
+(Englisch: "UnitOfWork\_StateUnderTest\_ExpectedBehavior")
+
+\begin{itemize}
+\item Eine Arbeitseinheit ist die Klasse, Methode bzw. Funktionalität die getestet wird. \\
+    Ist am getesteten Ablauf nicht nur eine Methode beteiligt wird als \\
+    Arbeitseinheit die erste public Methode gewählt, die aufgerufen wird. ("Einstiegsmethode")
+\item Die Eingabe sind die Eingabeparameter für den Test.
+\item Das Erwartete Ergebnis ist das, was durch die Assertion(s) getestet wird.
+\end{itemize}
+
+\subsection{Beispiele}
+\label{sec-1-2}
+
+\begin{verbatim}
+public void Sum_NegativeNumberAs1stParam_ExceptionThrown()
+
+public void Sum_NegativeNumberAs2ndParam_ExceptionThrown ()
+
+public void Sum_simpleValues_Calculated ()
+
+public void Parse_OnEmptyString_ExceptionThrown()
+
+public void Parse_SingleToken_ReturnsEqualToeknValue ()
+\end{verbatim}
+
+\begin{verbatim}
+IsLoginOK_UserDoesNotExist_ReturnsFalse
+
+AddUser_ValidUserDetails_UserCanBeLoggedIn
+
+IsLoginOK_LoginFails_CallsLogger
+\end{verbatim}
+
+\subsection{Referenzen und weiterführende Texte}
+\label{sec-1-3}
+\begin{itemize}
+\item \url{http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html}
+\item \url{http://osherove.com/blog/2012/5/15/test-naming-conventions-with-unit-of-work.html}
+\item \url{http://osherove.com/blog/2012/5/15/what-does-the-unit-in-unit-test-mean.html}
+\item \url{http://artofunittesting.com/definition-of-a-unit-test/}
+\end{itemize}
+% Emacs 24.4.1 (Org mode 8.2.10)
+\end{document}
