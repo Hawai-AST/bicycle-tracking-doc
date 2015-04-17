@@ -45,7 +45,7 @@ _Benötigt Client-ID Header._
     "firstname": "Hans",
     "name": "Wurst",
     "password": "thisismypassword",
-    "birthday": "01.01.1970",
+    "birthday": "1970-01-01",
     "gender": "male",
     "address": {
         "street": "Leetstreet",
@@ -64,7 +64,7 @@ _Benötigt Client-ID Header._
 | firstname  | Vorname des Kunden |
 | name       | Nachname des Kunden |
 | password   | Das zu verwendende Passwort |
-| birthday   | Geburtstag des Kunden, Format: dd.mm.yyyy |
+| birthday   | Geburtstag des Kunden, Format: yyyy-mm-dd |
 | gender     | Geschlecht des Kunden |
 | address    | Adresse des Kunden |
 
