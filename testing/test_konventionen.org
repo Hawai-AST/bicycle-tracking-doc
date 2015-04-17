@@ -18,23 +18,23 @@ Arbeitseinheit_Eingabe_ErwartetesErgebnis
 ** Beispiele
    
 #+BEGIN_SRC java
-  public void Sum_NegativeNumberAs1stParam_ExceptionThrown()
+  public void sum_NegativeNumberAs1stParam_ExceptionThrown()
 
-  public void Sum_NegativeNumberAs2ndParam_ExceptionThrown ()
+  public void sum_NegativeNumberAs2ndParam_ExceptionThrown ()
 
-  public void Sum_simpleValues_Calculated ()
+  public void sum_simpleValues_Calculated ()
 
-  public void Parse_OnEmptyString_ExceptionThrown()
+  public void parse_OnEmptyString_ExceptionThrown()
 
-  public void Parse_SingleToken_ReturnsEqualToeknValue ()
+  public void parse_SingleToken_ReturnsEqualToeknValue ()
 #+END_SRC
 
 #+BEGIN_SRC java
-  IsLoginOK_UserDoesNotExist_ReturnsFalse
+  isLoginOK_UserDoesNotExist_ReturnsFalse
 
-  AddUser_ValidUserDetails_UserCanBeLoggedIn
+  addUser_ValidUserDetails_UserCanBeLoggedIn
 
-  IsLoginOK_LoginFails_CallsLogger
+  isLoginOK_LoginFails_CallsLogger
 #+END_SRC
 	 
 ** Referenzen und weiterführende Texte
