@@ -64,7 +64,7 @@ _Benötigt Client-ID Header._
 | firstname  | Vorname des Kunden |
 | name       | Nachname des Kunden |
 | password   | Das zu verwendende Passwort |
-| birthday   | Geburtstag des Kunden, Format: yyyy-mm-dd |
+| birthday   | Geburtstag des Kunden, Format: yyyy-MM-dd |
 | gender     | Geschlecht des Kunden |
 | address    | Adresse des Kunden |
 
