@@ -6,7 +6,8 @@
 <ul>
 <li><a href="#sec-1-1">1.1. Konvention</a></li>
 <li><a href="#sec-1-2">1.2. Beispiele</a></li>
-<li><a href="#sec-1-3">1.3. Referenzen und weiterführende Texte</a></li>
+<li><a href="#sec-1-3">1.3. Benennung von Helper-Methoden</a></li>
+<li><a href="#sec-1-4">1.4. Referenzen und weiterführende Texte</a></li>
 </ul>
 </li>
 </ul>
@@ -18,7 +19,7 @@
 
 ## Konvention<a id="sec-1-1" name="sec-1-1"></a>
 
-Tests werden nach folgendem Schema benannt:
+Test-Methoden werden nach folgendem Schema benannt:
 
     Arbeitseinheit_Eingabe_ErwartetesErgebnis
 
@@ -32,23 +33,34 @@ Tests werden nach folgendem Schema benannt:
 
 ## Beispiele<a id="sec-1-2" name="sec-1-2"></a>
 
-    public void Sum_NegativeNumberAs1stParam_ExceptionThrown()
+    public void sum_NegativeNumberAs1stParam_ExceptionThrown()
     
-    public void Sum_NegativeNumberAs2ndParam_ExceptionThrown ()
+    public void sum_NegativeNumberAs2ndParam_ExceptionThrown ()
     
-    public void Sum_simpleValues_Calculated ()
+    public void sum_simpleValues_Calculated ()
     
-    public void Parse_OnEmptyString_ExceptionThrown()
+    public void parse_OnEmptyString_ExceptionThrown()
     
-    public void Parse_SingleToken_ReturnsEqualToeknValue ()
+    public void parse_SingleToken_ReturnsEqualToeknValue ()
 
-    IsLoginOK_UserDoesNotExist_ReturnsFalse
+    isLoginOK_UserDoesNotExist_ReturnsFalse
     
-    AddUser_ValidUserDetails_UserCanBeLoggedIn
+    addUser_ValidUserDetails_UserCanBeLoggedIn
     
-    IsLoginOK_LoginFails_CallsLogger
+    isLoginOK_LoginFails_CallsLogger
 
-## Referenzen und weiterführende Texte<a id="sec-1-3" name="sec-1-3"></a>
+## Benennung von Helper-Methoden<a id="sec-1-3" name="sec-1-3"></a>
+
+Methoden, die keine Test-Methoden sind, werden nach folgendem Schema benannt:
+
+    setup()
+    setup_*()
+    setup()
+    teardown_*()
+    initTest()
+    initTest_*()
+
+## Referenzen und weiterführende Texte<a id="sec-1-4" name="sec-1-4"></a>
 
 -   <http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html>
 -   <http://osherove.com/blog/2012/5/15/test-naming-conventions-with-unit-of-work.html>

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>test_konventionen</title>
-<!-- 2015-04-17 Fr 01:10 -->
+<!-- 2015-04-21 Di 19:12 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -145,7 +145,8 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#sec-1-1">1.1. Konvention</a></li>
 <li><a href="#sec-1-2">1.2. Beispiele</a></li>
-<li><a href="#sec-1-3">1.3. Referenzen und weiterführende Texte</a></li>
+<li><a href="#sec-1-3">1.3. Benennung von Helper-Methoden</a></li>
+<li><a href="#sec-1-4">1.4. Referenzen und weiterfÃ¼hrende Texte</a></li>
 </ul>
 </li>
 </ul>
@@ -159,7 +160,7 @@ for the JavaScript code in this tag.
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> Konvention</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-Tests werden nach folgendem Schema benannt:
+Test-Methoden werden nach folgendem Schema benannt:
 </p>
 <pre class="example">
 Arbeitseinheit_Eingabe_ErwartetesErgebnis
@@ -169,11 +170,11 @@ Arbeitseinheit_Eingabe_ErwartetesErgebnis
 </p>
 
 <ul class="org-ul">
-<li>Eine Arbeitseinheit ist die Klasse, Methode bzw. Funktionalität die getestet wird. <br  />
+<li>Eine Arbeitseinheit ist die Klasse, Methode bzw. FunktionalitÃ¤t die getestet wird. <br  />
     Ist am getesteten Ablauf nicht nur eine Methode beteiligt wird als <br  />
-    Arbeitseinheit die erste public Methode gewählt, die aufgerufen wird. ("Einstiegsmethode")
+    Arbeitseinheit die erste public Methode gewÃ¤hlt, die aufgerufen wird. ("Einstiegsmethode")
 </li>
-<li>Die Eingabe sind die Eingabeparameter für den Test.
+<li>Die Eingabe sind die Eingabeparameter fÃ¼r den Test.
 </li>
 <li>Das Erwartete Ergebnis ist das, was durch die Assertion(s) getestet wird.
 </li>
@@ -186,33 +187,54 @@ Arbeitseinheit_Eingabe_ErwartetesErgebnis
 <div class="outline-text-3" id="text-1-2">
 <div class="org-src-container">
 
-<pre class="src src-java">public void Sum_NegativeNumberAs1stParam_ExceptionThrown()
+<pre class="src src-java">public void sum_NegativeNumberAs1stParam_ExceptionThrown()
 
-public void Sum_NegativeNumberAs2ndParam_ExceptionThrown ()
+public void sum_NegativeNumberAs2ndParam_ExceptionThrown ()
 
-public void Sum_simpleValues_Calculated ()
+public void sum_simpleValues_Calculated ()
 
-public void Parse_OnEmptyString_ExceptionThrown()
+public void parse_OnEmptyString_ExceptionThrown()
 
-public void Parse_SingleToken_ReturnsEqualToeknValue ()
+public void parse_SingleToken_ReturnsEqualToeknValue ()
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre class="src src-java">IsLoginOK_UserDoesNotExist_ReturnsFalse
+<pre class="src src-java">isLoginOK_UserDoesNotExist_ReturnsFalse
 
-AddUser_ValidUserDetails_UserCanBeLoggedIn
+addUser_ValidUserDetails_UserCanBeLoggedIn
 
-IsLoginOK_LoginFails_CallsLogger
+isLoginOK_LoginFails_CallsLogger
 </pre>
 </div>
 </div>
 </div>
 
 <div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Referenzen und weiterführende Texte</h3>
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Benennung von Helper-Methoden</h3>
 <div class="outline-text-3" id="text-1-3">
+<p>
+Methoden, die keine Test-Methoden sind, werden nach folgendem Schema benannt:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java">setup()
+setup_*()
+setup()
+teardown_*()
+initTest()
+initTest_*()
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Referenzen und weiterfÃ¼hrende Texte</h3>
+<div class="outline-text-3" id="text-1-4">
 <ul class="org-ul">
 <li><a href="http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html">http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html</a>
 </li>
@@ -228,7 +250,7 @@ IsLoginOK_LoginFails_CallsLogger
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2015-04-17 Fr 01:10</p>
+<p class="date">Created: 2015-04-21 Di 19:12</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

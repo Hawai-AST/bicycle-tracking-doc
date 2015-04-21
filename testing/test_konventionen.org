@@ -3,7 +3,7 @@
 * Test Konventionen
 
 ** Konvention
-Tests werden nach folgendem Schema benannt:
+Test-Methoden werden nach folgendem Schema benannt:
 #+BEGIN_EXAMPLE
 Arbeitseinheit_Eingabe_ErwartetesErgebnis
 #+END_EXAMPLE
@@ -36,7 +36,21 @@ Arbeitseinheit_Eingabe_ErwartetesErgebnis
 
   isLoginOK_LoginFails_CallsLogger
 #+END_SRC
-	 
+
+** Benennung von Helper-Methoden
+Methoden, die keine Test-Methoden sind, werden nach folgendem Schema benannt:
+
+#+BEGIN_SRC java
+  setup()
+  setup_*()
+  setup()
+  teardown_*()
+  initTest()
+  initTest_*()
+#+END_SRC
+
+
+   
 ** Referenzen und weiterführende Texte
    - http://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html
    - http://osherove.com/blog/2012/5/15/test-naming-conventions-with-unit-of-work.html
