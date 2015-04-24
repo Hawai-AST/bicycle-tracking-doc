@@ -1,4 +1,4 @@
-# Bike V1
+# Bike V1 (DRAFT)
 
 ## GET /sellinglocations
 Gibt alle im System verfügbaren Verkaufsorte zurück.
