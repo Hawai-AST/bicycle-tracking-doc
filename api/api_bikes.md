@@ -1,13 +1,13 @@
 # Bike V1 (DRAFT)
 
-## GET /sellinglocations
+## GET /saleslocations
 Gibt alle im System verfügbaren Verkaufsorte zurück.
 
 ### Request
 
 _Requires login and Client-ID header_
 
-_NO CONTENT_
+*NO CONTENT*
 
 ### Response
 ```json
@@ -34,11 +34,12 @@ _NO CONTENT_
 Fügt ein Fahrrad zu dem Kunden
 ### Request
 _Requires login and Client-ID header_
+
 ```json
 {
     "framenumber": 1010101,
     "type": "street",
-    "soldLocation": "Beep Bikes",
+    "salesLocation": null,
     "buyDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
@@ -48,18 +49,19 @@ _Requires login and Client-ID header_
 |-----------------|--------------|
 | framenumber     | Rahmennr des Fahrrads |
 | type            | Typ |
-| soldLocation    | Name des Verkaufsortes |
+| salesLocation    | Name des Verkaufsortes |
 | buyDate         | Kaufdatum |
 | nextMaintenance | Datum der nächsten Inspektion |
 
 ### Response
 Bei Erfolg:
+
 ```json
 {
     "id": 1337,
     "framenumber": 1010101,
     "type": "street",
-    "soldLocation": "Beep Bikes",
+    "salesLocation": null,
     "buyDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
@@ -85,7 +87,7 @@ _NO CONTENT_
             "id": 1337,
             "framenumber": 1010101,
             "type": "street",
-            "soldLocation": "Beep Bikes",
+            "salesLocation": null,
             "buyDate": "2015-12-01",
             "nextMaintenance": "2016-12-01"
         }
@@ -108,7 +110,7 @@ _Requires login and Client-ID header_
 ```json
 {
     "type": "street",
-    "soldLocation": "Beep Bikes",
+    "salesLocation": null,
     "buyDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
@@ -117,18 +119,19 @@ _Requires login and Client-ID header_
 | Parameter       | Beschreibung |
 |-----------------|--------------|
 | type            | Typ |
-| soldLocation    | Name des Verkaufsortes |
+| salesLocation    | Name des Verkaufsortes |
 | buyDate         | Kaufdatum |
 | nextMaintenance | Datum der nächsten Inspektion |
 
 ### Response
 Bei Erfolg:
+
 ```json
 {
     "id": 1337,
     "framenumber": 1010101,
     "type": "street",
-    "soldLocation": "Beep Bikes",
+    "salesLocation": null,
     "buyDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
