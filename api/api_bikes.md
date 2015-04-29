@@ -37,7 +37,7 @@ _Requires login and Client-ID header_
 
 ```json
 {
-    "framenumber": 1010101,
+    "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
     "buyDate": "2015-12-01",
@@ -47,7 +47,7 @@ _Requires login and Client-ID header_
 
 | Parameter       | Beschreibung |
 |-----------------|--------------|
-| framenumber     | Rahmennr des Fahrrads |
+| frameNumber     | Rahmennr des Fahrrads |
 | type            | Fahrradmodell |
 | salesLocation    | Name des Verkaufsortes |
 | buyDate         | Kaufdatum |
@@ -59,7 +59,7 @@ Bei Erfolg:
 ```json
 {
     "id": 1337,
-    "framenumber": 1010101,
+    "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
     "buyDate": "2015-12-01",
@@ -85,7 +85,7 @@ _NO CONTENT_
     "bikes": [
         {
             "id": 1337,
-            "framenumber": 1010101,
+            "frameNumber": 1010101,
             "type": "mk-401 street style",
             "salesLocation": null,
             "buyDate": "2015-12-01",
@@ -110,6 +110,7 @@ _Requires login and Client-ID header_
 ```json
 {
     "type": "mk-401 street style",
+    "frameNumber": 1010101,
     "salesLocation": null,
     "buyDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
@@ -119,6 +120,7 @@ _Requires login and Client-ID header_
 | Parameter       | Beschreibung |
 |-----------------|--------------|
 | type            | Fahrradmodell |
+| frameNumber     | Rahmennr des Fahrrads |
 | salesLocation    | Name des Verkaufsortes |
 | buyDate         | Kaufdatum |
 | nextMaintenance | Datum der nächsten Inspektion |
@@ -129,7 +131,7 @@ Bei Erfolg:
 ```json
 {
     "id": 1337,
-    "framenumber": 1010101,
+    "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
     "buyDate": "2015-12-01",
