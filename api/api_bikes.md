@@ -49,8 +49,8 @@ _Requires login and Client-ID header_
 |-----------------|--------------|
 | frameNumber     | Rahmennr des Fahrrads |
 | type            | Fahrradmodell |
-| salesLocation    | Name des Verkaufsortes |
 | buyDate         | Kaufdatum |
+| salesLocation   | Name des Verkaufsortes (Optional, kann null sein.) |
 | nextMaintenance | Datum der nächsten Inspektion |
 
 ### Response
