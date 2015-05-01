@@ -40,7 +40,7 @@ _Requires login and Client-ID header_
     "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
-    "buyDate": "2015-12-01",
+    "purchaseDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
 ```
@@ -49,8 +49,8 @@ _Requires login and Client-ID header_
 |-----------------|--------------|
 | frameNumber     | Rahmennr des Fahrrads |
 | type            | Fahrradmodell |
-| buyDate         | Kaufdatum |
 | salesLocation   | Name des Verkaufsortes (Optional, kann null sein.) |
+| purchaseDate    | Kaufdatum |
 | nextMaintenance | Datum der nächsten Inspektion |
 
 ### Response
@@ -62,7 +62,7 @@ Bei Erfolg:
     "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
-    "buyDate": "2015-12-01",
+    "purchaseDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
 ```
@@ -88,7 +88,7 @@ _NO CONTENT_
             "frameNumber": 1010101,
             "type": "mk-401 street style",
             "salesLocation": null,
-            "buyDate": "2015-12-01",
+            "purchaseDate": "2015-12-01",
             "nextMaintenance": "2016-12-01"
         }
     ]
@@ -112,7 +112,7 @@ _Requires login and Client-ID header_
     "type": "mk-401 street style",
     "frameNumber": 1010101,
     "salesLocation": null,
-    "buyDate": "2015-12-01",
+    "purchaseDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
 ```
@@ -121,8 +121,8 @@ _Requires login and Client-ID header_
 |-----------------|--------------|
 | type            | Fahrradmodell |
 | frameNumber     | Rahmennr des Fahrrads |
-| salesLocation    | Name des Verkaufsortes |
-| buyDate         | Kaufdatum |
+| salesLocation   | Name des Verkaufsortes |
+| purchaseDate    | Kaufdatum |
 | nextMaintenance | Datum der nächsten Inspektion |
 
 ### Response
@@ -134,7 +134,7 @@ Bei Erfolg:
     "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,
-    "buyDate": "2015-12-01",
+    "purchaseDate": "2015-12-01",
     "nextMaintenance": "2016-12-01"
 }
 ```
