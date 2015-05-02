@@ -45,7 +45,7 @@ _Benötigt Client-ID Header._
     "firstname": "Hans",
     "name": "Wurst",
     "password": "thisismypassword",
-    "birthday": "01.01.1970",
+    "birthday": "1970-01-01",
     "gender": "male",
     "address": {
         "street": "Leetstreet",
@@ -60,12 +60,12 @@ _Benötigt Client-ID Header._
 | Parameter  | Beschreibung |
 |------------|--------------|
 | email      | Email des Kunden, die Später verwendet werden soll |
-| customerid | Kundennummer, dem Kunden vom CRM zugeteilt wurde |
+| customerid | Kundennummer, dem Kunden vom CRM zugeteilt wurde (Optional, kann leer sein) |
 | firstname  | Vorname des Kunden |
 | name       | Nachname des Kunden |
 | password   | Das zu verwendende Passwort |
-| birthday   | Geburtstag des Kunden, Format: dd.mm.yyyy |
-| gender     | Geschlecht des Kunden |
+| birthday   | Geburtstag des Kunden, Format: yyyy-MM-dd (Optional, kann leer sein) |
+| gender     | Geschlecht des Kunden (Optional, kann leer sein) |
 | address    | Adresse des Kunden |
 
 ### Response
