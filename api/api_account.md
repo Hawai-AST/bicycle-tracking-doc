@@ -38,7 +38,6 @@ _Benötigt Client-ID Header._
     "customerid": "00157751",
     "firstname": "Hans",
     "name": "Wurst",
-    "password": "thisismypassword",
     "birthday": "1970-01-01",
     "gender": "male",
     "address": {
@@ -96,7 +95,6 @@ Bei Erfolg:
     "customerid": "00157751",
     "firstname": "Hans",
     "name": "Wurst",
-    "password": "thisismypassword",
     "birthday": "1970-01-01",
     "gender": "male",
     "address": {
