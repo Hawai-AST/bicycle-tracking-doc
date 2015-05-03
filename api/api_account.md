@@ -23,8 +23,8 @@ Bei Erfolg:
 ```
 
 __Fehler__:
-- 401 - Invalid Token
-- 404 - Password kann nicht gesetzt werden
+- 404 - Invalid Token
+- 400 - Password kann nicht gesetzt werden
 - 500 - Server Error
 
 
@@ -71,11 +71,11 @@ Bei Erfolg:
 
 __Fehler__:
 - 400 - Eines der Inputs war nicht im richtigen Format
-- 401 - Invalid Token
+- 404 - Invalid Token
 - 402 - Email existiert bereits für einen anderen Nutzer
 - 500 - Server Error
 
-## POST /setUserCredentials
+## POST /getUserCredentials
 ### Request
 _Benötigt Client-ID Header._
 ```json
@@ -109,5 +109,5 @@ Bei Erfolg:
 ```
 
 __Fehler__:
-- 401 - Invalid Token
+- 404 - Invalid Token
 - 500 - Server Error
