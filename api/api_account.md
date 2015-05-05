@@ -1,42 +1,37 @@
 # Account V1
 
-## POST /changePassword
+## POST /user/password
 ### Request
 _Benötigt Client-ID Header._
+
 ```json
 {
-    "token": "bf3b8eca-f5cd-46ba-b424-f6f91d142d70",
     "code": "thisIsTjeNewPassword"
 }
 ```
+
 | Parameter  | Beschreibung |
 |------------|--------------|
-| token      | Token, der während des Logins erstellt wurde |
 | code       | Neues Password des Users |
 
 ### Response
-Bei Erfolg:
-```json
-{
-    "status": "OK"
-}
-```
+__EMPTY__
 
 __Fehler__:
-- 404 - Invalid Token
+
+- 403 - Nicht eingeloggt
 - 400 - Password kann nicht gesetzt werden
 - 500 - Server Error
 
 
-## POST /setUserCredentials
+## POST /user
 ### Request
 _Benötigt Client-ID Header._
+
 ```json
 {
-	"token": "bf3b8eca-f5cd-46ba-b424-f6f91d142d70",
-    "email": "testing@example.com",
     "customerid": "00157751",
-    "firstname": "Hans",
+    "firstName": "Hans",
     "name": "Wurst",
     "birthday": "1970-01-01",
     "gender": "male",
@@ -50,10 +45,9 @@ _Benötigt Client-ID Header._
     }
 }
 ```
+
 | Parameter  | Beschreibung |
 |------------|--------------|
-| token      | Token, der während des Logins erstellt wurde |
-| email      | Email des Kunden, die Später verwendet werden soll |
 | customerid | Kundennummer, dem Kunden vom CRM zugeteilt wurde (Optional, kann leer sein) |
 | firstname  | Vorname des Kunden |
 | name       | Nachname des Kunden |
@@ -62,38 +56,29 @@ _Benötigt Client-ID Header._
 | address    | Adresse des Kunden |
 
 ### Response
-Bei Erfolg:
-```json
-{
-    "status": "ok"
-}
-```
+__EMPTY__
 
 __Fehler__:
+
 - 400 - Eines der Inputs war nicht im richtigen Format
-- 404 - Invalid Token
-- 402 - Email existiert bereits für einen anderen Nutzer
+- 403 - Nicht eingeloggt
+- 409 - Customer ID existiert bereits
 - 500 - Server Error
 
-## POST /getUserCredentials
+## GET /user
 ### Request
 _Benötigt Client-ID Header._
-```json
-{
-    "token": "bf3b8eca-f5cd-46ba-b424-f6f91d142d70",
-}
-```
-| Parameter  | Beschreibung |
-|------------|--------------|
-| token      | Token, der während des Logins erstellt wurde |
+
+__Empty__
 
 ### Response
 Bei Erfolg:
+
 ```json
 {
     "email": "testing@example.com",
     "customerid": "00157751",
-    "firstname": "Hans",
+    "firstName": "Hans",
     "name": "Wurst",
     "birthday": "1970-01-01",
     "gender": "male",
@@ -109,5 +94,6 @@ Bei Erfolg:
 ```
 
 __Fehler__:
-- 404 - Invalid Token
+
+- 403 - Nicht eingeloggt
 - 500 - Server Error
