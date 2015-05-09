@@ -1,4 +1,4 @@
-# Map Draft  -  bitte auf Sinnhaftigkeit bzgl Fehler etc prüfen.
+# Map Draft
 
 ## POST /route
 ### Request
@@ -52,6 +52,8 @@ __Empty__
 ### Response
 __Erfolg__:
 
+Gibt Collection mit Name und Zeitpunkt von allen gefahrenen Routen des Nutzers zurück.
+
 ```json
 [
 	{
@@ -83,6 +85,8 @@ _Benötigt Client-ID Header._
 
 ### Response
 __Erfolg__:
+
+Gibt Map mit spezifischer Route zurück.
 
 ```json
 {
