@@ -8,6 +8,7 @@ _Benötigt Client-ID Header._
 {
 	name: "RouteXYZ",
 	bikeID: 1234,
+	lengthInKm: 123.5,
 	rodeAt: "2015-04-25T12:35:55Z",
 	finishedAt: "2015-04-25T12:35:55Z",
 	waypoints: [
@@ -29,6 +30,7 @@ _Benötigt Client-ID Header._
 |------------|--------------|
 | name | User-vergebener Name der Route |
 | bikeID | ID des Bikes mit dem die Route gefahren wurde |
+| lengthInKm | Länge der gefahrenen Strecke |
 | rodeAt | Startzeitpunkt der Tour |
 | finishedAt | Endzeitpunkt der Tour |
 | waypoints | Array aus Waypoint, Route wird mit aufsteigendem Index abgelaufen |
@@ -59,6 +61,7 @@ _Benötigt Client-ID Header._
 {
 	name: "RouteXYZ",
 	bikeID: 1234,
+	lengthInKm: 123.5,
 	rodeAt: "2015-04-25T12:35:55Z",
 	finishedAt: "2015-04-25T12:35:55Z",
 	waypoints: [
@@ -80,6 +83,7 @@ _Benötigt Client-ID Header._
 |------------|--------------|
 | name | User-vergebener Name der Route |
 | bikeID | ID des Bikes mit dem die Route gefahren wurde |
+| lengthInKm | Länge der gefahrenen Strecke |
 | rodeAt | Startzeitpunkt der Tour |
 | finishedAt | Endzeitpunkt der Tour |
 | waypoints | Array aus Waypoint, Route wird mit aufsteigendem Index abgelaufen |
@@ -115,6 +119,7 @@ Gibt Collection mit Name, Bike-ID sowie Start- und Endzeitpunkt von allen gefahr
 	{
 		id:	12345,
 		name: "Route66",
+		lengthInKm: 123.5,
 		bikeID: 1234,
 		rodeAt: "2015-04-25T12:35:55Z",
 		finishedAt: "2015-04-25T12:35:55Z"
@@ -122,6 +127,7 @@ Gibt Collection mit Name, Bike-ID sowie Start- und Endzeitpunkt von allen gefahr
 	{
 		id:	12500,
 		name: "Route33",
+		lengthInKm: 123.5,
 		bikeID: 1234,
 		rodeAt: "2015-04-24T12:35:55Z",
 		finishedAt: "2015-04-25T12:35:55Z"
@@ -152,6 +158,7 @@ Gibt Map mit spezifischer Route zurück.
 {
 	name: "RouteXYZ",
 	bikeID: 1234,
+	lengthInKm: 123.5,
 	rodeAt: "2015-04-25T12:35:55Z",
 	finishedAt: "2015-04-25T12:35:55Z",
 	createdAt: "2015-04-26T12:35:55Z",
