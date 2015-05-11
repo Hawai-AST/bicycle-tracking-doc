@@ -6,21 +6,21 @@ _Benötigt Client-ID Header._
 
 ```json
 {
-	name: "RouteXYZ",
-	bikeID: 1234,
-	lengthInKm: 123.5,
-	rodeAt: "2015-04-25T12:35:55Z",
-	finishedAt: "2015-04-25T12:35:55Z",
-	waypoints: [
+	"name": "RouteXYZ",
+	"bikeID": 1234,
+	"lengthInKm": 123.5,
+	"startAt": "2015-04-25T12:35:55Z",
+	"finishedAt": "2015-04-25T12:35:55Z",
+	"waypoints": [
 		{
-			lat: 53.55705300904082,
-		    lng: 10.022841095924377,
-		    name: "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.55705300904082,
+		    "longitude": 10.022841095924377,
+		    "name": "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		},
 		{
-			lat: 53.557301561749455,
-		    lng: 10.020703375339508,
-		    name: "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.557301561749455,
+		    "longitude": 10.020703375339508,
+		    "name": "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		}
 	]
 }
@@ -31,11 +31,11 @@ _Benötigt Client-ID Header._
 | name | User-vergebener Name der Route |
 | bikeID | ID des Bikes mit dem die Route gefahren wurde |
 | lengthInKm | Länge der gefahrenen Strecke |
-| rodeAt | Startzeitpunkt der Tour |
+| startAt | Startzeitpunkt der Tour |
 | finishedAt | Endzeitpunkt der Tour |
 | waypoints | Array aus Waypoint, Route wird mit aufsteigendem Index abgelaufen |
-| lat | Geographische Breite des Waypoints |
-| lng | Geographische Länge des Wapoints |
+| latitude | Geographische Breite des Waypoints |
+| longitude | Geographische Länge des Wapoints |
 | name | Genaue Bezeichnung des Waypoints |
 
 ### Response
@@ -59,21 +59,21 @@ _Benötigt Client-ID Header._
 
 ```json
 {
-	name: "RouteXYZ",
-	bikeID: 1234,
-	lengthInKm: 123.5,
-	rodeAt: "2015-04-25T12:35:55Z",
-	finishedAt: "2015-04-25T12:35:55Z",
-	waypoints: [
+	"name": "RouteXYZ",
+	"bikeID": 1234,
+	"lengthInKm": 123.5,
+	"startAt": "2015-04-25T12:35:55Z",
+	"finishedAt": "2015-04-25T12:35:55Z",
+	"waypoints": [
 		{
-			lat: 53.55705300904082,
-		    lng: 10.022841095924377,
-		    name: "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.55705300904082,
+		    "longitude": 10.022841095924377,
+		    "name": "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		},
 		{
-			lat: 53.557301561749455,
-		    lng: 10.020703375339508,
-		    name: "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.557301561749455,
+		    "longitude": 10.020703375339508,
+		    "name": "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		}
 	]
 }
@@ -84,11 +84,11 @@ _Benötigt Client-ID Header._
 | name | User-vergebener Name der Route |
 | bikeID | ID des Bikes mit dem die Route gefahren wurde |
 | lengthInKm | Länge der gefahrenen Strecke |
-| rodeAt | Startzeitpunkt der Tour |
+| startAt | Startzeitpunkt der Tour |
 | finishedAt | Endzeitpunkt der Tour |
 | waypoints | Array aus Waypoint, Route wird mit aufsteigendem Index abgelaufen |
-| lat | Geographische Breite des Waypoints |
-| lng | Geographische Länge des Wapoints |
+| latitude | Geographische Breite des Waypoints |
+| longitude | Geographische Länge des Wapoints |
 | name | Genaue Bezeichnung des Waypoints |
 
 ### Response
@@ -117,20 +117,20 @@ Gibt Collection mit Name, Bike-ID sowie Start- und Endzeitpunkt von allen gefahr
 ```json
 [
 	{
-		id:	12345,
-		name: "Route66",
-		lengthInKm: 123.5,
-		bikeID: 1234,
-		rodeAt: "2015-04-25T12:35:55Z",
-		finishedAt: "2015-04-25T12:35:55Z"
+		"id":	12345,
+		"name": "Route66",
+		"lengthInKm": 123.5,
+		"bikeID": 1234,
+		"startAt": "2015-04-25T12:35:55Z",
+		"finishedAt": "2015-04-25T12:35:55Z"
 	},
 	{
-		id:	12500,
-		name: "Route33",
-		lengthInKm: 123.5,
-		bikeID: 1234,
-		rodeAt: "2015-04-24T12:35:55Z",
-		finishedAt: "2015-04-25T12:35:55Z"
+		"id":	12500,
+		"name": "Route33",
+		"lengthInKm": 123.5,
+		"bikeID": 1234,
+		"startAt": "2015-04-24T12:35:55Z",
+		"finishedAt": "2015-04-25T12:35:55Z"
 	}
 ]
 ```
@@ -155,24 +155,25 @@ __Erfolg__:
 Gibt Map mit spezifischer Route zurück.
 
 ```json
-{
-	name: "RouteXYZ",
-	bikeID: 1234,
-	lengthInKm: 123.5,
-	rodeAt: "2015-04-25T12:35:55Z",
-	finishedAt: "2015-04-25T12:35:55Z",
-	createdAt: "2015-04-26T12:35:55Z",
-	updatedAt: "2015-04-26T12:35:55Z",
-	waypoints: [
+{	
+	"id":	12345,
+	"name": "RouteXYZ",
+	"bikeID": 1234,
+	"lengthInKm": 123.5,
+	"startAt": "2015-04-25T12:35:55Z",
+	"finishedAt": "2015-04-25T12:35:55Z",
+	"createdAt": "2015-04-26T12:35:55Z",
+	"updatedAt": "2015-04-26T12:35:55Z",
+	"waypoints": [
 		{
-			lat: 53.55705300904082,
-		    lng: 10.022841095924377,
-		    name: "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.55705300904082,
+		    "longitude": 10.022841095924377,
+		    "name": "Hochschule für Angewandte Wissenschaften Campus Berliner Tor, 5-21, Berliner Tor, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		},
 		{
-			lat: 53.557301561749455,
-		    lng: 10.020703375339508,
-		    name: "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
+			"latitude": 53.557301561749455,
+		    "longitude": 10.020703375339508,
+		    "name": "1, Lübeckertordamm, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland"
 		}
 	]
 }
