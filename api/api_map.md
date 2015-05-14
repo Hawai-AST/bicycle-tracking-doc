@@ -49,7 +49,7 @@ __Fehler__:
 - 500 - Server Error
 
 
-## PUT /route/{id}
+## PUT /route/:id
 ### Request
 _Benötigt Client-ID Header._
 
@@ -94,7 +94,7 @@ _Benötigt Client-ID Header._
 ### Response
 __Erfolg__:
 
-Siehe Rückgabe einzelne Route (GET /route/{id}).
+Siehe Rückgabe einzelne Route (GET /route/:id).
 
 __Fehler__:
 
@@ -185,7 +185,7 @@ __Fehler__:
 - 500 - Server Error
 
 
-## DELETE /route/{id}
+## DELETE /route/:id
 ### Request
 _Benötigt Client-ID Header._
 
