@@ -7,7 +7,7 @@ _Benötigt Client-ID Header._
 ```json
 {
 	"name": "RouteXYZ",
-	"bikeID": 1234,
+	"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
 	"startAt": "2015-04-25T12:35:55Z",
 	"finishedAt": "2015-04-25T12:35:55Z",
@@ -60,7 +60,7 @@ _Benötigt Client-ID Header._
 ```json
 {
 	"name": "RouteXYZ",
-	"bikeID": 1234,
+	"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
 	"startAt": "2015-04-25T12:35:55Z",
 	"finishedAt": "2015-04-25T12:35:55Z",
@@ -117,18 +117,18 @@ Gibt Collection mit Name, Bike-ID sowie Start- und Endzeitpunkt von allen gefahr
 ```json
 [
 	{
-		"id":	12345,
+		"id":	"bf3b8eca-f5cd-46ba-b424-f6f91d142d70",
 		"name": "Route66",
 		"lengthInKm": 123.5,
-		"bikeID": 1234,
+		"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
 		"startAt": "2015-04-25T12:35:55Z",
 		"finishedAt": "2015-04-25T12:35:55Z"
 	},
 	{
-		"id":	12500,
+		"id":	"bf3b8eca-f53d-46ba-b424-f6f91d142d70",
 		"name": "Route33",
 		"lengthInKm": 123.5,
-		"bikeID": 1234,
+		"bikeID": "6ba7d410-9dad-11d1-80b4-00c04fd430c8",
 		"startAt": "2015-04-24T12:35:55Z",
 		"finishedAt": "2015-04-25T12:35:55Z"
 	}
@@ -156,9 +156,9 @@ Gibt Map mit spezifischer Route zurück.
 
 ```json
 {	
-	"id":	12345,
+	"id":	"bf3b8eca-f5cd-46ba-b424-f6f91d142d70",
 	"name": "RouteXYZ",
-	"bikeID": 1234,
+	"bikeID": "6ba7d410-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
 	"startAt": "2015-04-25T12:35:55Z",
 	"finishedAt": "2015-04-25T12:35:55Z",

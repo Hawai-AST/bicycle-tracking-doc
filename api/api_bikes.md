@@ -84,7 +84,7 @@ _NO CONTENT_
     "total": 1,
     "bikes": [
         {
-            "id": 1337,
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
             "frameNumber": 1010101,
             "type": "mk-401 street style",
             "salesLocation": null,
@@ -130,7 +130,7 @@ Bei Erfolg:
 
 ```json
 {
-    "id": 1337,
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "frameNumber": 1010101,
     "type": "mk-401 street style",
     "salesLocation": null,

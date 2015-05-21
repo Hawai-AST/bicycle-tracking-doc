@@ -47,7 +47,7 @@ _Benötigt Client-ID Header._
 ```json
 {
     "email": "testing@example.com",
-    "customerid": "00157751",
+    "customerid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "firstname": "Hans",
     "name": "Wurst",
     "password": "thisismypassword",
@@ -134,7 +134,7 @@ _Benötigt Client-ID Header._
 ```json
 {
     "email": "testing@example.com",
-    "customerid": "00157751",
+    "customerid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "firstname": "Hans",
     "name": "Wurst",
     "password": "thisismypassword",

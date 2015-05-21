@@ -30,7 +30,7 @@ _Benötigt Client-ID Header._
 
 ```json
 {
-    "customerid": "00157751",
+    "customerid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "firstName": "Hans",
     "name": "Wurst",
     "birthday": "1970-01-01",
@@ -77,7 +77,7 @@ Bei Erfolg:
 ```json
 {
     "email": "testing@example.com",
-    "customerid": "00157751",
+    "customerid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
     "firstName": "Hans",
     "name": "Wurst",
     "birthday": "1970-01-01",
