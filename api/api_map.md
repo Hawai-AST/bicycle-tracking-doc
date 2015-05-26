@@ -9,8 +9,8 @@ _Benötigt Client-ID Header._
 	"name": "RouteXYZ",
 	"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
-	"startAt": "2015-04-25T12:35:55Z",
-	"finishedAt": "2015-04-25T12:35:55Z",
+	"startAt": "2015-04-25 12:35",
+	"finishedAt": "2015-04-25 12:35",
 	"waypoints": [
 		{
 			"latitude": 53.55705300904082,
@@ -62,8 +62,8 @@ _Benötigt Client-ID Header._
 	"name": "RouteXYZ",
 	"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
-	"startAt": "2015-04-25T12:35:55Z",
-	"finishedAt": "2015-04-25T12:35:55Z",
+	"startAt": "2015-04-25 12:35",
+	"finishedAt": "2015-04-25 12:35",
 	"waypoints": [
 		{
 			"latitude": 53.55705300904082,
@@ -121,16 +121,16 @@ Gibt Collection mit Name, Bike-ID sowie Start- und Endzeitpunkt von allen gefahr
 		"name": "Route66",
 		"lengthInKm": 123.5,
 		"bikeID": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-		"startAt": "2015-04-25T12:35:55Z",
-		"finishedAt": "2015-04-25T12:35:55Z"
+		"startAt": "2015-04-25 12:35",
+		"finishedAt": "2015-04-25 12:35"
 	},
 	{
 		"id":	"bf3b8eca-f53d-46ba-b424-f6f91d142d70",
 		"name": "Route33",
 		"lengthInKm": 123.5,
 		"bikeID": "6ba7d410-9dad-11d1-80b4-00c04fd430c8",
-		"startAt": "2015-04-24T12:35:55Z",
-		"finishedAt": "2015-04-25T12:35:55Z"
+		"startAt": "2015-04-24 12:35",
+		"finishedAt": "2015-04-25 12:35"
 	}
 ]
 ```
@@ -160,8 +160,8 @@ Gibt Map mit spezifischer Route zurück.
 	"name": "RouteXYZ",
 	"bikeID": "6ba7d410-9dad-11d1-80b4-00c04fd430c8",
 	"lengthInKm": 123.5,
-	"startAt": "2015-04-25T12:35:55Z",
-	"finishedAt": "2015-04-25T12:35:55Z",
+	"startAt": "2015-04-25 12:35",
+	"finishedAt": "2015-04-25 12:35",
 	"createdAt": "2015-04-26T12:35:55Z",
 	"updatedAt": "2015-04-26T12:35:55Z",
 	"waypoints": [
