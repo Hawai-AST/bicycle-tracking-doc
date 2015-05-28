@@ -1,5 +1,32 @@
 # Bike V1
 
+## GET /biketypes
+Gibt alle im System verfügbaren Fahrradtypen zurück.
+
+### Request
+
+_Requires login and Client-ID header_
+
+*NO CONTENT*
+
+### Response
+[
+  {
+    "name": "City Bike",
+    "id": "bed4ec0c-ccdb-4f18-bfad-b74a045876b9",
+    "description": "for the city",
+    "inspectionIntervalInWeeks": 4
+  },
+  {
+    "name": "City Cross",
+    "id": "00f5ef7e-1c51-4a56-9b5d-244b8730b3e3",
+    "description": "for the cross",
+    "inspectionIntervalInWeeks": 2
+  }
+  ,
+  ...
+]
+
 ## GET /saleslocations
 Gibt alle im System verfügbaren Verkaufsorte zurück.
 
